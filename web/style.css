@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.botoes-topo{
+    display:flex;
+    gap:10px;
+}
+
+button{
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+header button{
+    background:white;
+    color:#0d6efd;
+    font-weight:bold;
+}
+
+.titulo{
+    padding:20px;
+}
+
+main{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    cursor:pointer;
+    transition:.2s;
+    min-height:90px;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card h3{
+    font-size:18px;
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.oculto{
+    display:none;
+}
+
+.janela{
+    background:white;
+    width:400px;
+    max-width:90%;
+    border-radius:10px;
+    padding:20px;
+}
+
+.janela h2{
+    margin-bottom:15px;
+}
+
+input,
+select{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.acoes{
+    display:flex;
+    gap:10px;
+    justify-content:flex-end;
+    margin-top:15px;
+}
+
+#listaReservas{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+#listaReservas .card{
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+#listaReservas .card button{
+    margin-top:10px;
+    width:100%;
+}
