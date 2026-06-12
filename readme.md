@@ -64,6 +64,10 @@ Este projeto foi desenvolvido como parte dos meus estudos em desenvolvimento Ful
 
 ---
 
+## Screenshots
+
+![HotelClick](./assets/hotel.png)
+
 ##  Estrutura do Projeto
 
 ```bash
@@ -83,6 +87,4 @@ hotelreservas/
 │
 └── README.md
 
-## Screenshots
 
-![HotelClick](./assets/hotel.png)
